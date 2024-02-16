@@ -1,0 +1,86 @@
+/* CSS Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-theme-color: #0491d7;
+  --secondary-theme-color: #fbcd00;
+  --background-color: #e2e8f0;
+  --main-text-color: #000000;
+  --secondary-text-color: #777777;
+  --inverted-text-color: #ffffff;
+  --avatar-1-background-color: #dff2ff;
+  --avatar-2-background-color: #fbcd00;
+  --avatar-3-background-color: #a3a3a3;
+  --avatar-4-background-color: #ffa3ae;
+}
+
+.general-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr) 2fr repeat(2, 1fr);
+  gap: 10px;
+  background-color: pink;
+  border: 3px solid blue;
+}
+
+.header-section {
+  border: 3px solid red;
+  grid-row: 2 / 3;
+}
+
+.sidebar-section {
+  border: 3px solid black;
+  grid-row: 1 / 2;
+}
+
+.project-section {
+  border: 3px solid green;
+  grid-row: 3 / 4;
+}
+
+.announcement-section {
+  border: 3px solid yellow;
+  grid-row: 4 / 5;
+}
+
+.trending-section {
+  border: 3px solid indigo;
+  grid-row: 5 / 6;
+}
+
+/* Larger Screen Sizes */
+@media screen and (min-width: 500px) {
+  .general-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr repeat(2, 2fr);
+  }
+
+  .header-section {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .sidebar-section {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+  }
+
+  .project-section {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+  }
+
+  .announcement-section {
+    grid-column: 4 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .trending-section {
+    grid-column: 4 / -1;
+    grid-row: 3 / -1;
+  }
+}
