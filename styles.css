@@ -3,6 +3,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 :root {
@@ -11,7 +13,7 @@
   --background-color: #e2e8f0;
   --main-text-color: #000000;
   --secondary-text-color: #777777;
-  --inverted-text-color: #ffffff;
+  --main-white-color: #ffffff;
   --avatar-1-background-color: #dff2ff;
   --avatar-2-background-color: #fbcd00;
   --avatar-3-background-color: #a3a3a3;
@@ -23,17 +25,20 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr) 2fr repeat(2, 1fr);
   gap: 10px;
-  background-color: pink;
+  background-color: var(--background-color);
   border: 3px solid blue;
 }
 
 .header-section {
   border: 3px solid red;
+  background-color: var(--main-white-color);
   grid-row: 2 / 3;
 }
 
 .sidebar-section {
   border: 3px solid black;
+  background-color: var(--primary-theme-color);
+  color: var(--main-white-color);
   grid-row: 1 / 2;
 }
 
@@ -59,28 +64,127 @@
     grid-template-rows: 1fr repeat(2, 2fr);
   }
 
+  /* Header Section */
   .header-section {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
+  .search-box {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    border: 3px solid black;
+  }
+
+  .user-info {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border: 3px solid blue;
+  }
+
+  .user-greeting {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 3px solid green;
+  }
+
+  .admin-buttons {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    border: 3px solid orange;
+  }
+
+  /* Sidebar Section */
   .sidebar-section {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
   }
 
+  .dashboard-title {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 3px solid red;
+  }
+
+  .links-set-1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 3px solid yellow;
+  }
+
+  .links-set-2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    border: 3px solid purple;
+  }
+
+  /* Project Section */
   .project-section {
     grid-column: 2 / 4;
     grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, 2fr);
+    grid-template-rows: 30px repeat(3, 1fr);
   }
 
+  .project-section-header {
+    grid-column: 1 / 5; /* MAYBE 1 / 2 */
+    grid-row: 1 / 2;
+    border: 3px solid brown;
+  }
+
+  .project-cards {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    border: 3px solid pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .project-card {
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+  /* Announcement Section */
   .announcement-section {
     grid-column: 4 / -1;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr;
   }
 
+  .announcement-section-header {
+    border: 3px solid brown;
+  }
+
+  .announcement-card {
+    border: 3px solid green;
+  }
+
+  /* Trending Section */
   .trending-section {
     grid-column: 4 / -1;
     grid-row: 3 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr;
+  }
+
+  .trending-section-header {
+    border: 3px solid brown;
+  }
+
+  .trending-card {
+    border: 3px solid green;
   }
 }
