@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
 
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/0ac95c350b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <title>Admin Dashboard</title>
@@ -20,16 +26,27 @@
       <!-- Header Section -->
       <div class="header-section">
         <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" name="query" id="query" />
         </div>
         <div class="user-info">
-          <div class="avatar-placeholder"></div>
+          <i class="fa-regular fa-bell notification-icon"></i>
+          <div class="avatar-placeholder">
+            <img src="images/avatars/threads-avatar.png" alt="threads-avatar" />
+          </div>
           <p class="admin-username">Morgan Oakley</p>
         </div>
         <div class="user-greeting">
-          <div class="avatar-placeholder-large"></div>
-          <p class="greeting">Hi there,</p>
-          <p class="admin-username-large">Morgan Oakley (@morgan)</p>
+          <div class="avatar-placeholder-large">
+            <img
+              src="images/avatars/threads-avatar-large.png"
+              alt="threads-avatar-large"
+            />
+          </div>
+          <div class="greeting-text">
+            <p class="greeting-hello">Hi there,</p>
+            <p class="admin-username-large">Morgan Oakley (@morgan)</p>
+          </div>
         </div>
         <div class="admin-buttons">
           <button class="new-button">New</button>
@@ -41,25 +58,48 @@
       <!-- Sidebar Section -->
       <div class="sidebar-section">
         <div class="dashboard-header">
-          <p class="dashboard-text">Dashboard</p>
+          <p class="dashboard-text">
+            <i class="fa-solid fa-table-columns fa-2x"></i> Dashboard
+          </p>
         </div>
 
         <div class="links-set-1">
           <ul class="action-links">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-house"></i> Home
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-regular fa-address-card"></i> Profile
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-message"></i> Messages
+            </a>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-clock"></i> History
+            </a>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-bars-progress"></i> Tasks
+            </a>
+
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-street-view"></i> Communities
+            </a>
           </ul>
         </div>
 
         <div class="links-set-2">
           <ul class="settings-links">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-gear"></i> Settings
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-circle-question"></i> Support
+            </a>
+            <a href="#" class="sidebar-item">
+              <i class="fa-solid fa-shield-halved"></i> Privacy
+            </a>
           </ul>
         </div>
       </div>
@@ -82,7 +122,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
 
             <div class="project-card">
@@ -93,7 +137,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
 
             <div class="project-card">
@@ -104,7 +152,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
 
             <div class="project-card">
@@ -115,7 +167,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
 
             <div class="project-card">
@@ -126,7 +182,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
 
             <div class="project-card">
@@ -137,7 +197,11 @@
                 inventore fugiat, ex error soluta maiores fuga. Quaerat cumque
                 blanditiis accusamus pariatur.
               </p>
-              <div class="icons">Icons go here</div>
+              <div class="project-icons">
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-eye"></i>
+                <i class="fa-solid fa-code-fork"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -183,27 +247,52 @@
 
           <div class="trending-card">
             <div class="trending-user-info">
-              <div class="avatar-placeholder"></div>
-              <p class="user-handle">@tegan</p>
-              <p class="user-project">World Peace Builder</p>
+              <div class="avatar-placeholder avatar-1">
+                <img src="images/avatars/dog-avatar.png" alt="dog-avatar" />
+              </div>
+              <div class="user-info-text">
+                <p class="user-handle">@tegan</p>
+                <p class="user-project">World Peace Builder</p>
+              </div>
             </div>
 
             <div class="trending-user-info">
-              <div class="avatar-placeholder"></div>
-              <p class="user-handle">@morgan</p>
-              <p class="user-project">Super Cool Project</p>
+              <div class="avatar-placeholder avatar-2">
+                <img
+                  src="images/avatars/threads-avatar.png"
+                  alt="threads-avatar"
+                />
+              </div>
+              <div class="user-info-text">
+                <p class="user-handle">@morgan</p>
+                <p class="user-project">Super Cool Project</p>
+              </div>
             </div>
 
             <div class="trending-user-info">
-              <div class="avatar-placeholder"></div>
-              <p class="user-handle">@kendall</p>
-              <p class="user-project">Life Changing App</p>
+              <div class="avatar-placeholder avatar-3">
+                <img
+                  src="images/avatars/spiderman-avatar.png"
+                  alt="spiderman-avatar"
+                />
+              </div>
+              <div class="user-info-text">
+                <p class="user-handle">@kendall</p>
+                <p class="user-project">Life Changing App</p>
+              </div>
             </div>
 
             <div class="trending-user-info">
-              <div class="avatar-placeholder"></div>
-              <p class="user-handle">@alex</p>
-              <p class="user-project">No Traffic Maker</p>
+              <div class="avatar-placeholder avatar-4">
+                <img
+                  src="images/avatars/penguin-avatar.png"
+                  alt="penguin-avatar"
+                />
+              </div>
+              <div class="user-info-text">
+                <p class="user-handle">@alex</p>
+                <p class="user-project">No Traffic Maker</p>
+              </div>
             </div>
           </div>
         </div>
