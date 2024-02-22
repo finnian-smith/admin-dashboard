@@ -34,6 +34,45 @@
   padding: 30px 0 10px;
 }
 
+/* Hover Effects */
+.admin-buttons button:hover {
+  cursor: pointer;
+  border: 2px solid var(--primary-theme-color);
+  background-color: var(--main-white-color);
+  color: var(--primary-theme-color);
+}
+
+.avatar-placeholder:hover,
+.user-info-text:hover {
+  cursor: pointer;
+}
+
+.project-icons i:hover,
+.search-box i:hover,
+.user-info i:hover,
+.admin-username:hover,
+.project-title:hover,
+.announcement-title:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sidebar-item:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.project-card:hover {
+  transform: scale(1.01);
+}
+
+/* Box Shadows */
+.project-card,
+.announcement-card,
+.trending-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Header Section Mobile */
 .header-section {
   background-color: var(--main-white-color);
@@ -167,6 +206,7 @@
   border-radius: 15px;
   padding: 30px;
   position: relative;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-card::before {
@@ -199,11 +239,6 @@
 
 .project-icons i {
   margin: 25px 10px 0;
-}
-
-.project-icons i:hover {
-  cursor: pointer;
-  opacity: 0.5;
 }
 
 /* Announcement Section Mobile */
